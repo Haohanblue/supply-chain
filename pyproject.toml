@@ -1,12 +1,17 @@
 [tool.poetry]
-name = "gongying"
+name = "fastapi-learn-1"
 version = "0.1.0"
 description = ""
 authors = ["Haohanblue <1147378768@qq.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.14"
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.114.0"}
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+sqlalchemy = "^2.0.34"
+pymysql = "^1.1.1"
+starlette = "^0.38.5"
 
 
 [build-system]
