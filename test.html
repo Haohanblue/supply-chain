@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV 层级嵌套示例</title>
+    <style>
+        /* 父级 DIV 的样式 */
+        .parent {
+            background-color: #f2f2f2;
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* 第一个子级 DIV 的样式 */
+        .child-1 {
+            background-color: #b3d9ff;
+            border: 2px solid #0073e6;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        /* 嵌套子级 DIV 的样式 */
+        .nested-child {
+            background-color: #d9b3ff;
+            border: 2px solid #6600cc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* 第二个子级 DIV 的样式 */
+        .child-2 {
+            background-color: #ffd9b3;
+            border: 2px solid #e67300;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        /* 同级 DIV 的样式 */
+        .sibling {
+            background-color: #ffb3b3;
+            border: 2px solid #cc0000;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        父级 DIV
+        <div class="child-1">
+            子级 DIV 1
+            <div class="nested-child">
+                嵌套子级 DIV
+            </div>
+        </div>
+        <div class="child-2">
+            子级 DIV 2
+        </div>
+    </div>
+    <div class="sibling">
+        同级 DIV
+    </div>
+</body>
+</html>
